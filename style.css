@@ -20,3 +20,19 @@
   .settings-icon:hover {
     color: #343a40;
   }
+
+  .img-in-grid {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    object-fit: cover;
+    border-radius: 6%;
+    border-style: solid;
+  }
+  @media (max-width: 768px) {
+    .img-in-grid {
+        max-width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+}
